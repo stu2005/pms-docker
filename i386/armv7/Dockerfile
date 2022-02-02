@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 
 ARG S6_OVERLAY_VERSION=v2.2.0.3
-ARG S6_OVERLAY_ARCH=aarch64
-ARG PLEX_BUILD=linux-aarch64
+ARG S6_OVERLAY_ARCH=armhf
+ARG PLEX_BUILD=linux-armv7hf_neon
 ARG PLEX_DISTRO=debian
 ARG DEBIAN_FRONTEND="noninteractive"
 ENV TERM="xterm" LANG="C.UTF-8" LC_ALL="C.UTF-8"
@@ -52,7 +52,7 @@ ENV CHANGE_CONFIG_DIR_OWNERSHIP="true" \
 ARG TAG=beta
 ARG URL=
 
-COPY root/ /
+COPY ../root/ /
 
 RUN \
 # Save version and install

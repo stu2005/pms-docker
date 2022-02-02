@@ -51,7 +51,7 @@ ENV CHANGE_CONFIG_DIR_OWNERSHIP="true" \
 ARG TAG=beta
 ARG URL=
 
-COPY ../root/ /
+COPY root/ /
 
 RUN \
 # Save version and install
