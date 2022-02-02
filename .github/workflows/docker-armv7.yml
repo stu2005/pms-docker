@@ -31,4 +31,4 @@ jobs:
           context: ./armv7
           platforms: linux/arm/v7
           push: true
-          tags: stu2005/pms-docker:latest
+          tags: stu2005/pms-docker:armv7

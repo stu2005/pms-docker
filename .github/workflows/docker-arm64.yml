@@ -31,4 +31,4 @@ jobs:
           context: ./arm64
           platforms: linux/arm64
           push: true
-          tags: stu2005/pms-docker:latest
+          tags: stu2005/pms-docker:arm64
