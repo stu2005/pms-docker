@@ -28,8 +28,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: .
-          dockerfile: Dockerfile.i386
+          context: ./i386
           platforms: linux/386
           push: true
           tags: stu2005/pms-docker:latest
